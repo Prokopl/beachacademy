@@ -1,0 +1,568 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+div#wp-sponsors ul li {
+    float: left;
+    list-style: none;
+    padding: 10px;
+}
+
+nav#topnavbar, nav#shoptopnavbar {
+	padding: 0px;
+}
+
+nav#topnavbar ul, nav#shoptopnavbar ul {
+	width: 100%;
+	margin: auto;
+	text-align: center;
+}
+
+nav#topnavbar li {
+	width: 18%;
+	line-height: 40px;
+	font-size: 20px;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 2px solid black;
+	background-color: #FDA50F!important;
+}
+
+nav#topnavbar .current-menu-item {
+	background-color: #FD6A02!important;
+}
+
+nav#shoptopnavbar li {
+	width: 10%;
+	line-height: 30px;
+	font-size: 16px;
+	/* border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 2px solid black; */
+}
+
+nav#topnavbar li a {
+	color: black;
+	font-weight: 500;
+}
+
+nav#shoptopnavbar li a {
+	color: black;
+	font-weight: 400;
+}
+
+nav#shoptopnavbar li a:hover {
+	background: lightgray;
+}
+
+nav#topnavbar .middle-link {
+	width: 14%;
+}
+
+@media (max-width: 992px) {
+	nav#topnavbar li {
+		width: 100%;
+		line-height: 40px;
+	}
+
+	nav#topnavbar .middle-link {
+		width: 100%;
+	}
+
+	nav#shoptopnavbar li {
+		width: 100%;
+	}
+}
+
+#logo {
+	position: absolute;
+	z-index: 10;
+	top: 20%;
+	margin: auto;
+	left: 0;
+	right: 0;
+	width: 170px;
+}
+
+#logo img {
+	width: 100%;
+}
+
+#socialmedia {
+	position: absolute;
+	z-index: 10;
+	bottom: 18%;
+	margin: auto;
+	left: 0;
+	right: 0;
+	width: 300px;
+}
+
+#socialmedia img {
+	width: 28%;
+	margin-left: 2%;
+	margin-right: 2%;
+	float: left;
+}
+
+#contactus {
+	position: absolute;
+	z-index: 10;
+	bottom: 5%;
+	margin: auto;
+	left: 0;
+	right: 0;
+	width: 300px;
+	text-align: center;
+}
+
+#mycarousel {
+	background: black;
+}
+
+#mycarousel .carousel-item {
+	background-size: cover;
+	background-position: 50% 50%;
+	width: 100%;
+	height: 100%;
+}
+
+#mycarousel	.carousel-inner {
+	height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  	height: calc(var(--vh, 1vh) * 100);
+}
+
+#mycarousel .carousel-item img {
+	visibility: hidden;
+}
+
+@media (max-height: 600px) {
+	#logo {width: 140px; top: 25%;}
+}
+
+@media (max-height: 420px) {
+	#logo {width: 90px; top: 18%;}
+	#socialmedia {width: 150px; bottom: 23%;}
+	#contactus .btn-lg {font-size: 0.8rem!important;}
+}
+
+.main-section {
+	margin: auto;
+	text-align: center;
+	padding: 30px 10%;
+}
+
+.main-section-shop {
+	margin: auto;
+	text-align: center;
+	padding: 0;
+}
+
+#about {
+	background-color: #FED766;
+}
+
+#page {
+	background-color: #fdfdfd;
+}
+
+#news, #team {
+	background-color: #E6E6EA;
+}
+
+#news {
+	background: url('./img/bglight.png');
+}
+
+#instafeed {
+	background: url('./img/bgdark.png');
+}
+
+#contact {
+	background: url('./img/bgyellow.png');
+}
+
+#map {
+	background: url('./img/bgdarkgeo.png');
+}
+
+.title {
+/* 	background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
+    background-position: bottom;
+    background-size: 7px 1px;
+    background-repeat: repeat-x; */
+	font-size: 1.7rem;
+	padding: 0px 8px;
+	font-weight: 300;
+	text-transform: uppercase;
+	border: 1.5px black solid;
+    padding: 4px 7px;
+}
+
+.page-title {
+	font-weight: 500;
+	border: 2px black solid;
+	line-height: 2em;
+}
+
+#instafeed .title, #map .title {
+/* 	background-image: linear-gradient(to right, #F5F5F5 33%, rgba(255,255,255,0) 0%); */
+	color: #F5F5F5;
+	border: 1.5px #F5F5F5 solid;
+}
+
+p {
+	text-align: justify;
+	padding-top: 20px;
+	font-weight: 300;
+}
+
+#news .cards {
+	display: inline-block;
+	padding-top: 25px;
+}
+
+#news .card {
+	float: left;
+	width: 21%;
+	margin: 2%;
+}
+
+#news .card-title {
+	font-weight: 300;
+	font-size: 1.2rem;
+	margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+	#news .card {
+		width: 46%;
+	}
+}
+
+@media (max-width: 768px) {
+	.main-section {
+		padding: 30px 5%;
+	}
+
+	#news .card {
+		width: 46%;
+	}
+}
+
+@media (max-width: 576px) {
+	#news .card {
+		width: 96%;
+	}
+}
+
+#instawidget {
+	padding-top: 25px;
+}
+
+#instawidget .lightwidget__caption {
+	background-color: white!important;
+}
+
+#trainers {
+	display: inline-block;
+	padding-top: 25px;
+}
+
+.trainer {
+	width: 16%;
+	float: left;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-bottom: 20px;
+}
+
+.trainer img {
+	object-fit: cover;
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+}
+
+.trainer p {
+	text-align: center;
+	font-size: 1.2rem;
+	word-spacing:9999px;
+}
+
+@media (max-width: 992px) {
+	.trainer {
+		width: 21%;
+	}
+}
+
+@media (max-width: 768px) {
+	.trainer {
+		width: 21%;
+	}
+}
+
+@media (max-width: 576px) {
+	.trainer {
+		width: 29%;
+	}
+	.trainer p {
+		font-size: 1.1rem;
+		word-spacing:9999px;
+	}
+}
+
+.mapouter {
+	display: block;
+	padding-top: 25px;
+}
+
+#partners .row {
+	margin: 0!important;
+	padding-top: 25px;
+}
+
+#wp-sponsors ul {
+	padding: 0;
+}
+
+#wp-sponsors ul li img {
+	height: auto!important;
+    max-height: 100px;
+    max-width: 375px;
+}
+
+@media (max-width: 992px) {
+  #wp-sponsors ul li img {
+    max-width: 85%;
+  }
+}
+
+.accordion img {
+	width: 100%;
+	max-width: 850px!important;
+	text-align: center;
+	margin: auto;
+}
+
+.carousel-inner {
+	opacity: 0.65;
+}
+
+.nav-item img {
+	max-width: 50px;
+	max-height: 35px;
+	margin-top: 10px;
+}
+
+#shoptopnavbar .nav-item img {
+	max-width: 40px;
+	max-height: 25px;
+	margin-top: 10px;
+}
+
+.nav-link {
+	padding: 0!important;
+}
+
+.img-same-height {
+	height: 180px;
+	object-fit: cover;
+}
+
+#news .card-body {
+	padding: 0.75rem!important;
+	min-height: 95px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.card-body li {
+	font-weight: 300;
+}
+
+#page {
+	padding-top: 114px;
+	min-height: 100vh;
+}
+
+#pageshop {
+	padding-top: 85px;
+	min-height: 100vh;
+	background: #E6E6EA;
+}
+
+#single-thumb img {
+	max-height: 350px;
+	margin-top: 30px;
+	outline: 5px solid white;
+}
+
+.date {
+	font-weight: 300;
+}
+
+#myAccordion .card-header {
+	padding: 0.25rem;
+}
+
+#myAccordion .card-header button {
+	color: white;
+	font-size: 1.2rem;
+}
+
+#myAccordion .card {
+	margin-bottom: 8px;
+}
+
+#shopnavbar li {
+	margin-left: 20px;
+}
+
+.navbar-light {
+	color: white!important;
+	opacity: 1;
+}
+
+.navbar-light .navbar-toggler {
+	border: 0;
+	opacity: 1;
+	color: white!important;
+}
+
+
+#tournaments img {
+	height: 220px!important;
+	object-fit: cover;
+}
+
+#page article img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+a {
+	color: #F6412D;
+}
+
+a:hover {
+	color: #AA0000;
+}
+
+
+.goo {
+    font-size: 1.9rem;
+    line-height: 1.35;
+    display: inline;
+    box-decoration-break: clone;
+    background:#3D3C3B;
+    padding: 0.5rem 1rem;
+	filter: url('#goo');
+	color: #F8B423;
+	font-weight: 400;
+}
+
+.goo:focus {
+    outline: 0;
+}
+
+.products li {
+	background: white;
+	padding: 20px!important;
+}
+
+#pageshopcontent {
+	padding: 3%;
+}
+
+
+/*== start of code for tooltips ==*/
+.tool {
+    cursor: help;
+    position: relative;
+}
+
+
+/*== common styles for both parts of tool tip ==*/
+.tool::before,
+.tool::after {
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+    z-index: -100;
+}
+
+.tool:hover::before,
+.tool:focus::before,
+.tool:hover::after,
+.tool:focus::after {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    z-index: 100; 
+}
+
+
+/*== pointer tip ==*/
+.tool::before {
+    border-style: solid;
+    border-width: 1em 0.75em 0 0.75em;
+    border-color: #3E474F transparent transparent transparent;
+    bottom: 100%;
+    content: "";
+    margin-left: -0.5em;
+    transition: all .65s cubic-bezier(.84,-0.18,.31,1.26), opacity .65s .5s;
+    transform:  scale(.6) translateY(-90%);
+} 
+
+.tool:hover::before,
+.tool:focus::before {
+    transition: all .65s cubic-bezier(.84,-0.18,.31,1.26) .2s;
+}
+
+
+/*== speech bubble ==*/
+.tool::after {
+    background: #3E474F;
+    border-radius: .25em;
+    bottom: 180%;
+    color: #EDEFF0;
+    content: attr(data-tip);
+    margin-left: -8.75em;
+    padding: 1em;
+    transition: all .65s cubic-bezier(.84,-0.18,.31,1.26) .2s;
+    transform:  scale(.6) translateY(50%);  
+    width: 17.5em;
+}
+
+.tool:hover::after,
+.tool:focus::after  {
+    transition: all .65s cubic-bezier(.84,-0.18,.31,1.26);
+}
+
+@media (max-width: 760px) {
+  .tool::after { 
+        font-size: .75em;
+        margin-left: -5em;
+        width: 10em; 
+  }
+}
+
+.copyright {
+	background-color: #E0E0E0;
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+.copyright a {
+	color: #222;
+}
+
+img.alignright { float: right; margin: 0 0 1em 1em; }
+img.alignleft { float: left; margin: 0 1em 1em 0; }
+img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.alignright { float: right; }
+.alignleft { float: left; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }
